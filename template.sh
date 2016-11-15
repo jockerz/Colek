@@ -25,7 +25,7 @@ make_it() {
     echo -e "\n\n[EDIT ME]\n\n" >> ${name}.md
     echo -e "\n##[Back to main page](https://github.com/jockerz/Colek) \n" >> ${name}.md
     echo "[+] ${name}.md is created"
-    echo -e "#!/usr/bin/python \n" >> ${name}.py
+    echo -e "#!/usr/bin/python \n\nprint \"[EDIT ME]\"" >> ${name}.py
     echo "[+] ${name}.py is created"
 
 }
