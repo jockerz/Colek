@@ -6,29 +6,31 @@ Programming exercise and the solutions(*maybe*)
 [_template.sh_ Create new md and py file for an exercise][https://github.com/jockerz/Colek/blob/master/template.sh)
 
 ```bash
-~/Colek$ ./template.sh new
-Create new. Type the name(for .py and .md filename), followed by [ENTER]
-image_downloader
-image_downloader.md is exist. Use another name
-~/Colek$ ./template.sh new
-Create new. Type the name(for .py and .md filename), followed by [ENTER]
-do
-Creating do.md and do.py
-Description(in one line)
-do something
-[+] do.md is created
-[+] do.py is created
 ~/Colek$ ./template.sh 
 Usage   ./template.sh <option>
 Options 
         new : create new md and python file (Will be prompted)
         help: print this
+        
+~/Colek$ ./template.sh new
+Create new(one line). Type the name(for .py and .md filename), followed by [ENTER]
+Name: test
+Creating test.md and test.py
+Type the description(one line), followed by [ENTER]
+NOTE: Please use alphanumneric (a-z and 0-9) characters only
+Desc: Just 4 a test
+[test.py](https://github.com/jockerz/Colek)
+
+[+] test.md is created
+[+] test.py is created
+[+] Adding the new exercise page url to README.md
 ```
 
 # List
 
 - [ssh client for doing auto task](https://github.com/jockerz/Colek/blob/master/ssh_client.md)
 - [test ~ Yeah a test](test.md)
+- [test ~ Just 4 a test](test.md)
 - _EndOfExercise_
 
 # Inspiration
