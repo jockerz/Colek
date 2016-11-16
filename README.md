@@ -22,7 +22,7 @@ do something
 Usage   ./template.sh <option>
 Options 
         new : create new md and python file (Will be prompted)
-                help: print this
+        help: print this
 ```
 
 # List
