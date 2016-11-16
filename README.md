@@ -3,9 +3,9 @@
 Programming exercise and the solutions(*maybe*)
 
 # tools
-[__template.sh__ Create new md and py file for an exercise](https://github.com/jockerz/Colek/blob/master/template.sh)
+[_template.sh_ Create new md and py file for an exercise][https://github.com/jockerz/Colek/blob/master/template.sh)
 
-```
+```bash
 ~/Colek$ ./template.sh new
 Create new. Type the name(for .py and .md filename), followed by [ENTER]
 image_downloader
@@ -22,12 +22,14 @@ do something
 Usage   ./template.sh <option>
 Options 
         new : create new md and python file (Will be prompted)
-        help: print this
+                help: print this
 ```
 
 # List
 
-- [Do auto task on ssh](https://github.com/jockerz/Colek/blob/master/ssh_client.md) 
+- [ssh client for doing auto task](https://github.com/jockerz/Colek/blob/master/ssh_client.md)
+- [test ~ Yeah a test](test.md)
+- _EndOfExercise_
 
 # Inspiration
 
