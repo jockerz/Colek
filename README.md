@@ -18,9 +18,7 @@ Name: test
 Creating test.md and test.py
 Type the description(one line), followed by [ENTER]
 NOTE: Please use alphanumneric (a-z and 0-9) characters only
-Desc: Just 4 a test
-[test.py](https://github.com/jockerz/Colek)
-
+Desc: Just doing a test
 [+] test.md is created
 [+] test.py is created
 [+] Adding the new exercise page url to README.md
@@ -29,7 +27,8 @@ Desc: Just 4 a test
 # List
 
 - [ssh client for doing auto task](https://github.com/jockerz/Colek/blob/master/ssh_client.md)
-- [test ~ Just 4 a test](test.md)
+- [kamus-cli ~ Word translator English to Bahasa Indonesia(default) or otherwise](https://github.com/jockerz/Colek/blob/master/test.md)
+- [test ~ Just doing a test](https://github.com/jockerz/Colek/blob/master/test.md)
 - _EndOfExercise_
 
 # Inspiration

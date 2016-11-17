@@ -34,5 +34,5 @@ optional arguments:
 - [Requests](http://docs.python-requests.org/en/latest/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
-##[Back to main page](https://github.com/jockerz/Colek) 
+## [<< Back to main page](https://github.com/jockerz/Colek) 
 

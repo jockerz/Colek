@@ -31,18 +31,18 @@ make_it() {
 
     echo "## $Desc" >> ${name}.md
     echo -e "\n\n[EDIT ME]\n\n" >> ${name}.md
-    echo -e "\n##[Back to main page]($github_repo) \n" >> ${name}.md
-    echo -e "[${name}.py]($github_repo)\n"
+    echo -e "\n## [<< Back to main page]($github_repo) \n" >> ${name}.md
+    echo -e "[${name}.py]($github_repo)\n"  >> ${name}.md
     echo "[+] ${name}.md is created"
 
     echo -e "#!/usr/bin/python \n\nprint \"[EDIT ME]\"" >> ${name}.py
     echo "[+] ${name}.py is created"
 
     # replace "_EndOfExercise_" with current exercise .md url
-    to_list="[${name} ~ ${Desc}](${name}.md)"
-    to_list=`echo $to_list | sed "s/\&/\\\&/"`
+    to_list="[${name} ~ ${Desc}](${github_repo}/blob/master/${name}.md)"
+    #to_list=`echo $to_list | sed "s/\&/\\\&/" `
     # echo $to_list # debuggin
-    sed "s/_EndOfExercise_/${to_list}\n- _EndOfExercise_/" -i README.md
+    sed "s|_EndOfExercise_|${to_list}\n- _EndOfExercise_|" -i README.md
     # Let me know
     echo "[+] Adding the new exercise page url to README.md"
 }
