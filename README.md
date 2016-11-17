@@ -29,7 +29,6 @@ Desc: Just 4 a test
 # List
 
 - [ssh client for doing auto task](https://github.com/jockerz/Colek/blob/master/ssh_client.md)
-- [test ~ Yeah a test](test.md)
 - [test ~ Just 4 a test](test.md)
 - _EndOfExercise_
 
