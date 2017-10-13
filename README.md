@@ -1,24 +1,23 @@
-# Colek
+# Python Scripts Collection
 
-Programming exercise and the solutions(*maybe*)
+## tools
 
-# tools
-[_template.sh_ Create new md and py file for an exercise][https://github.com/jockerz/Colek/blob/master/template.sh)
+[_template.sh_ Create new md and py file for an exercise](https://github.com/jockerz/Koleksi/blob/master/template.sh)
 
 ```bash
-~/Colek$ ./template.sh 
+~/Koleksi$ ./template.sh 
 Usage   ./template.sh <option>
 Options 
         new : create new md and python file (Will be prompted)
         help: print this
         
-~/Colek$ ./template.sh new
+~/Koleksi$ ./template.sh new
 Create new(one line). Type the name(for .py and .md filename), followed by [ENTER]
 Name: test
 Creating test.md and test.py
 Type the description(one line), followed by [ENTER]
 NOTE: Please use alphanumneric (a-z and 0-9) characters only
-Desc: Just doing a test
+Desc: Just a test
 [+] test.md is created
 [+] test.py is created
 [+] Adding the new exercise page url to README.md
@@ -26,12 +25,7 @@ Desc: Just doing a test
 
 # List
 
-- [ssh client for doing auto task](https://github.com/jockerz/Colek/blob/master/ssh_client.md)
-- [kamus-cli ~ Word translator English to Bahasa Indonesia(default) or otherwise](https://github.com/jockerz/Colek/blob/master/test.md)
-- [test ~ Just doing a test](https://github.com/jockerz/Colek/blob/master/test.md)
+- [ssh client for doing auto task](https://github.com/jockerz/Koleksi/blob/master/ssh_client.md)
+- [kamus-cli ~ Word translator English to Bahasa Indonesia(default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus.md)
+- [test ~ Just a test](https://github.com/jockerz/Koleksi/blob/master/test.md)
 - _EndOfExercise_
-
-# Inspiration
-
-- [Martyr2s mega project ideas list](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
-- [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code)

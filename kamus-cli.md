@@ -3,8 +3,9 @@
 > This is just for educational purpose. Use it at your own risk
 
 ## Test
+
 ```bash
-~/Colek$ python kamus-cli.py -h
+~/Koleksi$ python kamus-cli.py -h
 usage: kamus-cli.py [-h] [-e] Words) [Word(s ...]
 
 Word translator Bahasa Indonesia to English(default) or otherwise
@@ -16,11 +17,11 @@ optional arguments:
   -h, --help  show this help message and exit
   -e          English to Bahasa Indonesia
 
-~/Colek$ python kamus-cli.py percobaan
+~/Koleksi$ python kamus-cli.py percobaan
 [Term]:   percobaan
 [Result]: attempt, checkout, flyer, experiment, probation, testing, trial, try, tryout, workout, experiment, experimenter, experimentalist
 
-~/Colek$ python kamus-cli.py -e test
+~/Koleksi$ python kamus-cli.py -e test
 [Term]:   test (v)
 [Result]: mencoba, ujian, cobaan
 [Term]:   test (n)
@@ -34,5 +35,5 @@ optional arguments:
 - [Requests](http://docs.python-requests.org/en/latest/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
-## [<< Back to main page](https://github.com/jockerz/Colek) 
+## [<< Back to main page](https://github.com/jockerz/Koleksi) 
 

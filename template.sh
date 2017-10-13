@@ -2,7 +2,7 @@
 
 # Configurations
 ## Link to your github repo
-github_repo="https://github.com/jockerz/Colek" 
+github_repo="https://github.com/jockerz/Koleksi" 
 
 print_help() {
     echo -e "Usage \t$0 <option>"
@@ -15,15 +15,15 @@ make_it() {
     echo "Create new(one line). Type the name(for .py and .md filename), followed by [ENTER]"
     printf "Name: "
     read name
-    if [ -f ${name}.md ]; then
-        echo "$name.md is exist. Use another name"
+    if [ -f "${name}.md" ]; then
+        echo "${name}.md is exist. Use another name"
         exit 1
     fi
     if [ -f ${name}.py ]; then
-        echo "$name.md is exist. Use another name"
+        echo "${name}.py is exist. Use another name"
         exit 2
     fi
-    echo "Creating $name.md and $name.py"
+    echo "Creating ${name}.md and ${name}.py"
     echo "Type the description(one line), followed by [ENTER]"
     echo "NOTE: Please use alphanumneric (a-z and 0-9) characters only"
     printf "Desc: "
