@@ -26,6 +26,6 @@ Desc: Just a test
 # List
 
 - [ssh client for doing auto task](https://github.com/jockerz/Koleksi/blob/master/ssh_client.md)
-- [kamus-cli ~ Word translator English to Bahasa Indonesia(default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus.md)
+- [kamus-cli ~ Word translator English to Bahasa Indonesia(default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus-cli.md)
 - [test ~ Just a test](https://github.com/jockerz/Koleksi/blob/master/test.md)
 - _EndOfExercise_
