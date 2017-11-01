@@ -2,7 +2,7 @@
 
 ## tools
 
-[_template.sh_ Create new md and py file for an exercise](https://github.com/jockerz/Koleksi/blob/master/template.sh)
+[_template.sh_ Create new '.md' and '.py' file for an exercise](https://github.com/jockerz/Koleksi/blob/master/template.sh)
 
 ```bash
 ~/Koleksi$ ./template.sh 
