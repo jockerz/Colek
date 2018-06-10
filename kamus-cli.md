@@ -1,11 +1,16 @@
-## Word translator English to Bahasa Indonesia(default) or otherwise 
+## Word translator Bahasa Indonesia(default) to English or otherwise 
 
 > This is just for educational purpose. Use it at your own risk
 
-## Test
+## Usage
+
+Add to `.bashrc`, `.profile`, or any startup shell scripts
+```bash
+$ alias kamus="python PATH_TO_Koleksi/kamus-cli.py"
+```
 
 ```bash
-~/Koleksi$ python kamus-cli.py -h
+~/Koleksi$ kamus -h
 usage: kamus-cli.py [-h] [-e] Words) [Word(s ...]
 
 Word translator Bahasa Indonesia to English(default) or otherwise
@@ -17,7 +22,7 @@ optional arguments:
   -h, --help  show this help message and exit
   -e          English to Bahasa Indonesia
 
-~/Koleksi$ python kamus-cli.py percobaan
+~/Koleksi$ kamus percobaan
 [Term]:   percobaan
 [Result]: attempt, checkout, flyer, experiment, probation, testing, trial, try, tryout, workout, experiment, experimenter, experimentalist
 

@@ -11,14 +11,16 @@ print_help() {
     exit
 }
 
-make_it() {
-    echo "Create new(one line). Type the name(for .py and .md filename), followed by [ENTER]"
+create_files() {
+    echo "Name(one line). Type the name(for .py and .md filename), followed by [ENTER]"
     printf "Name: "
     read name
+    # Create markdown files
     if [ -f "${name}.md" ]; then
         echo "${name}.md is exist. Use another name"
         exit 1
     fi
+    # Create python files
     if [ -f ${name}.py ]; then
         echo "${name}.py is exist. Use another name"
         exit 2
@@ -32,7 +34,6 @@ make_it() {
     echo "## $Desc" >> ${name}.md
     echo -e "\n\n[EDIT ME]\n\n" >> ${name}.md
     echo -e "\n## [<< Back to main page]($github_repo) \n" >> ${name}.md
-    echo -e "[${name}.py]($github_repo)\n"  >> ${name}.md
     echo "[+] ${name}.md is created"
 
     echo -e "#!/usr/bin/python \n\nprint \"[EDIT ME]\"" >> ${name}.py
@@ -53,7 +54,7 @@ fi
 
 case $1 in
     "new")
-    make_it
+    create_files
     ;;
     *)
     print_help
