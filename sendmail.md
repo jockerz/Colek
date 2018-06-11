@@ -27,5 +27,9 @@ A text sent with Python's smtplib
 
 ```
 
+## Deps
+
+- `python2`
+
 ## [<< Back to main page](https://github.com/jockerz/Koleksi) 
 
