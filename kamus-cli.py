@@ -2,16 +2,16 @@
 import requests, re, argparse, sys
 from bs4 import BeautifulSoup
 
-main_url = "http://www.kamus.net/"
+main_url = "https://www.kamus.net/"
+
 
 def main():
-	parser = argparse.ArgumentParser(description='Word translator Bahasa Indonesia to English(default) or otherwise')
-	parser.add_argument('word',metavar='Word(s)', 
-		action="store", nargs="+",
-		help='Word to translate')
-	parser.add_argument('-e', action='store_true', 
-		default=False, dest='lang_en',
-		help="English to Bahasa Indonesia")
+	parser = argparse.ArgumentParser(
+        description='Word translator Bahasa Indonesia to English(default) or otherwise')
+	parser.add_argument('word',metavar='Word(s)', action="store", nargs="+",
+                		help='Word to translate')
+	parser.add_argument('-e', action='store_true', default=False, dest='lang_en',
+                		help="English to Bahasa Indonesia")
 	args = vars(parser.parse_args())
 
 	url = main_url
@@ -28,6 +28,7 @@ def main():
 
 	do_requests(url)
 
+
 def do_requests(url):
 	headers = {"user-agent":"Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0"}
 	try:
@@ -38,6 +39,7 @@ def do_requests(url):
 
 	finally:
 		req.close()
+
 
 def kamus_action(soup):
 	not_found = soup.find('hgroup').find('h1')
@@ -82,6 +84,7 @@ def kamus_action(soup):
 	else:
 		print "[!] Something gone wrong"
 		print "[!] Check the code or the website please"
+
 
 if __name__ == '__main__':
 	main()
