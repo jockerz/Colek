@@ -2,6 +2,7 @@
 import requests, re, argparse, sys
 from bs4 import BeautifulSoup
 
+
 main_url = "https://www.kamus.net/"
 
 
