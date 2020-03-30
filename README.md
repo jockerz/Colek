@@ -2,7 +2,7 @@
 
 ## tools
 
-[_template.sh_](https://github.com/jockerz/Koleksi/blob/master/template.sh) Create new '.md' and '.py' file for an exercise
+[`template.sh`](https://github.com/jockerz/Koleksi/blob/master/template.sh): Create new __.md__ and __.py__ file for an exercise
 
 ```bash
 ~/Koleksi$ ./template.sh 
@@ -25,8 +25,6 @@ Desc: Just a test
 
 # List
 
-- [ssh client for doing auto task](https://github.com/jockerz/Koleksi/blob/master/ssh_client.md)
 - [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus-cli.md)
 - [test ~ Just a test](https://github.com/jockerz/Koleksi/blob/master/test.md)
-- [sendmail ~ Send any email using python](https://github.com/jockerz/Koleksi/blob/master/sendmail.md)
 - _EndOfExercise_

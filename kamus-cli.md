@@ -1,4 +1,4 @@
-## Word translator Bahasa Indonesia(default) to English or otherwise 
+## Bahasa Indonesia Word Translator to English (default) or Otherwise 
 
 > This is just for educational purpose. Use it at your own risk
 
@@ -6,7 +6,7 @@
 
 Add to `.bashrc`, `.profile`, or any startup shell scripts
 ```bash
-$ alias kamus="python PATH_TO_Koleksi/kamus-cli.py"
+$ alias kamus="python3 {PATH_TO_Koleksi_DIR}/kamus-cli.py"
 ```
 
 ```bash
@@ -39,6 +39,10 @@ optional arguments:
 
 - [Requests](http://docs.python-requests.org/en/latest/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+```bash
+pip3 install --user beautifulsoup4 requests
+```
 
 ## [<< Back to main page](https://github.com/jockerz/Koleksi) 
 
