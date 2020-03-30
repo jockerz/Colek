@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import requests, re, argparse, sys
 from bs4 import BeautifulSoup
 
@@ -47,44 +47,49 @@ def kamus_action(soup):
 	found = soup.find('div', id ="featured-term-trans")
 	if (not_found != None) and ("couldn't find" in not_found.string):
 		terms = soup.find('hgroup').find_all('a')
-		print "[!]", not_found.string
-		print "Maybe you were looking for one of these:"
+		print("[!]", not_found.string)
+		print("Maybe you were looking for one of these:")
 		count = 0
 		for term in terms:
 			count += 1
 			if count < len(terms):
-				print term.string+",",
+				print(term.string + ",", end=" ")
 			else:
-				print term.string
+				print(term.string)
 	elif (found != None):
 		results = found.find_all('div', class_='trans') #.trans .clearfix
 		for result in results:
 			try:
-				print "[Term]:  ", result.find('div',class_="trans-source").p.strong.string,
+				print(
+					"[Term]:  ", 
+					result.find('div',class_="trans-source").p.strong.string,
+					end=" "
+				)
 			except:
 				pass
 
 			try:
-				print result.find('div',class_="trans-source").p.span.string,
+				print(result.find('div',class_="trans-source").p.span.string,
+					  end=" ")
 			except:
 				pass
 			print 
 
-			print "[Result]:", 
+			print("[Result]:", end=' ')
 			try:
 				res = result.find('div',class_="trans-target").find_all("p")
 				count = 0
 				for r in res:
 					count += 1
 					if count < len(res):
-						print r.a.strong.string + ",",
+						print(r.a.strong.string + ",", end=" ")
 					else:
-						print r.a.strong.string
+						print(r.a.strong.string)
 			except:
 				pass
 	else:
-		print "[!] Something gone wrong"
-		print "[!] Check the code or the website please"
+		print("[!] Something gone wrong")
+		print("[!] Check the code or the website please")
 
 
 if __name__ == '__main__':
