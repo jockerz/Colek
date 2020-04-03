@@ -23,9 +23,13 @@ Desc: Just a test
 [+] Adding the new exercise page url to README.md
 ```
 
+# Lisence: 
+
+MIT
+
 # List
 
-- [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus-cli.md)
-- [md5 ~ Generate md5 from string](https://github.com/jockerz/Koleksi/blob/master/md5.md)
+- [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](/kamus-cli.md)
+- [md5 ~ Generate md5 from string](/md5.md)
 - [test ~ Just a test](/test.md)
 - _EndOfExercise_
