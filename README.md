@@ -26,5 +26,6 @@ Desc: Just a test
 # List
 
 - [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](https://github.com/jockerz/Koleksi/blob/master/kamus-cli.md)
-- [test ~ Just a test](https://github.com/jockerz/Koleksi/blob/master/test.md)
+- [md5 ~ Generate md5 from string](https://github.com/jockerz/Koleksi/blob/master/md5.md)
+- [test ~ Just a test](/test.md)
 - _EndOfExercise_
