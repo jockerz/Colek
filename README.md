@@ -32,4 +32,5 @@ MIT
 - [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](/kamus-cli.md)
 - [md5 ~ Generate md5 from string](/md5.md)
 - [test ~ Just a test](/test.md)
+- [dt ~ Convert timestamp to datetime](/dt.md)
 - _EndOfExercise_
