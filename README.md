@@ -33,4 +33,5 @@ MIT
 - [md5 ~ Generate md5 from string](/md5.md)
 - [test ~ Just a test](/test.md)
 - [dt ~ Convert timestamp to datetime](/dt.md)
+- [fake_mail_server ~ Fake mail server for development server on localhost](/fake_mail_server.md)
 - _EndOfExercise_
