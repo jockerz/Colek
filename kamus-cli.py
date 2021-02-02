@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-import requests, re, argparse, sys
-from bs4 import BeautifulSoup
+import re, argparse, sys
 
+import requests
+from bs4 import BeautifulSoup
+from requests.exceptions import ConnectionError
 
 main_url = "https://www.kamus.net/"
+HEADERS = {"user-agent":"Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0"}
 
 
 def main():
@@ -31,15 +34,14 @@ def main():
 
 
 def do_requests(url):
-	headers = {"user-agent":"Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0"}
 	try:
 		#print "Sending request",url
-		req = requests.get(url, headers=headers)
+		req = requests.get(url, headers=HEADERS)
 		soup = BeautifulSoup(req.text, "html.parser")
 		kamus_action(soup)
-
-	finally:
 		req.close()
+	except ConnectionError:
+		print("Conenction error")
 
 
 def kamus_action(soup):
