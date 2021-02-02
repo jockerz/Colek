@@ -10,12 +10,15 @@ NOT_FOUND_TEXT = 'Belum ada terjemahan :( '\
                  'Dang adong dope terjemahan bahh :('
 
 http = requests.Session()
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) '\
+                  'Gecko/20100101 Firefox/78.0'
+    }
 
 
 def do_request(url_args):
     try:
-        resp = http.post(URL, params=url_args)
-        # print('URL:', resp.url)
+        resp = http.post(URL, params=url_args, headers=HEADERS)
         resp.raise_for_status()
         return resp.text
     except ConnectionError:
@@ -26,10 +29,10 @@ def _process(elem_panel):
     strong = elem_panel.find('strong')
     italic = elem_panel.find('i')
     if strong and italic:
-        print(f' > {strong.string.strip()}')
+        print(f' ▶️ {strong.string.strip()}')
         print(f'   {italic.string.strip()}')
     else:
-        print(f' > {elem_panel.string.strip()}')
+        print(f' ▶️ {elem_panel.string.strip()}')
 
 
 def parse_html(html_text):
@@ -40,7 +43,7 @@ def parse_html(html_text):
         panel = panel.div
         if is_first:
             is_first = False
-            print(f' > {panel.string.strip()}\n')
+            print(f' ◼️ {panel.string.strip()}\n')
             continue
         _process(panel)
 
