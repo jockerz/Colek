@@ -30,6 +30,7 @@ MIT
 # List
 
 - [kamus-cli ~ Word translator Bahasa Indonesia to English (default) or otherwise](/kamus-cli.md)
+- [kamus-batak ~ Batak Language Word Translator to Bahasa Indonesia (default) or Otherwise](/kamus-batak.md)
 - [md5 ~ Generate md5 from string](/md5.md)
 - [test ~ Just a test](/test.md)
 - [dt ~ Convert timestamp to datetime](/dt.md)

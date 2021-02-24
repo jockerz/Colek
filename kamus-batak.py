@@ -31,7 +31,7 @@ def _process(elem_panel):
     if strong and italic:
         print(f' ▶️ {strong.string.strip()}')
         print(f'   {italic.string.strip()}')
-    else:
+    elif elem_panel.string:
         print(f' ▶️ {elem_panel.string.strip()}')
 
 
@@ -43,6 +43,8 @@ def parse_html(html_text):
         panel = panel.div
         if is_first:
             is_first = False
+            if not panel or not panel.string:
+                continue
             print(f' ◼️ {panel.string.strip()}\n')
             continue
         _process(panel)
