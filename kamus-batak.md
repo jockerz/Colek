@@ -1,4 +1,4 @@
-## Batak Language Word Translator to Bahasa Indonesia (default) or Otherwise
+## Batak Language to Bahasa Indonesia (default) or otherwise Word Translator
 
 > This is just for educational purpose. Use it at your own risk
 
